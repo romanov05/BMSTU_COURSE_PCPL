@@ -210,3 +210,93 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================
+# Дополнения для языка F#
+# ============================================
+
+# Скомпилированные файлы F#
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.fs.js  # Компиляция в JS (при использовании Fable)
+
+# Выходные файлы проекта
+out/
+dist/
+release/
+
+# Файлы проекта и решения
+*.user
+*.suo
+*_Resharper*
+*.dotCover
+
+# Специфичные для F# файлы
+paket-files/  # Если используется Paket
+.fake/        # FAKE build system
+.paket/       # Paket package manager
+packages/     # Пакеты NuGet (но лучше использовать Paket или `dotnet restore`)
+
+# Отчеты о тестировании
+TestResults/
+*.trx
+*.coverage
+
+# Конфигурационные файлы
+*.orig
+*.log
+
+# Временные файлы
+*.tmp
+temp/
+
+# Файлы редакторов
+.vs/
+.fsautocomplete  # Ionide/FSAC
+.fsac/
+.fsi.exe
+.fsc.exe
+
+# Инструменты анализа кода
+.fxcop/
+*.lastcodeanalysis
+
+# Специфичные для .NET
+_ReSharper.*
+*.dotSettings
+*.sln.cache
+
+# Дополнительно для .NET Core / .NET 5+
+.vscode/
+launchSettings.json
+appsettings.*.json  # кроме основного appsettings.json
+
+# Файлы покрытия тестами
+coverage.*
+lcov.info
+*.coverlet
+
+# Дополнения для распространенных инструментов
+# Если используете FAKE
+build.fsx.lock
+.fake/
+.packages/
+
+# Если используете Fornax (генератор статических сайтов на F#)
+**/_public/
+**/_bin/
+**/_lib/
+
+# Если используете Saturn/Giraffe и т.п.
+*.db
+*.sqlite
+migrations/
+
+# Дополнительно для контейнеров/развертывания
+Dockerfile.*
+.dockerignore
+docker-compose.override.yml
